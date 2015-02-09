@@ -1,13 +1,13 @@
 
 
 ---
-title: Hello, My Blog
+title: My Blog
 ---
 
 {{ page.title }}
 
-#--- begin of page's head
-title = "Hello, My Blog"
-#--- end of page's head
+{% for post in site.posts %}
 
-print(page.title)
+{{ post.date|date_to_string }} <a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
+
+{% endfor %}
