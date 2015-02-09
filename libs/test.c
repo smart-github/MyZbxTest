@@ -10,7 +10,7 @@
  *             key  - item's key                                              *
  *                                                                            *
  ******************************************************************************/
-static void	get_value(const char *source_ip, const char *host, unsigned short port, const char *key)
+static void	get_value(const char *source_ip, const char *host, unsigned short port, const char *key)//get value from agent
 {
 	zbx_sock_t	s;
 	int		ret;
